@@ -1,0 +1,39 @@
+Task 1 – Data Loading & Inspection
+3) Identify numerical and categorical columns
+Gender & CLASS are categorical column.
+
+----------------------------------------------------------------------------------------------------------------------
+Box Plot of Numerical Columns: Create a box plot for all numerical columns in a single
+
+
+The box plot shows the distribution and spread of the numerical variables in the dataset.
+The median line inside each box represents the central value of each variable.
+The box represents the middle 50% of observations (IQR).
+Points beyond the whiskers indicate potential outliers.
+The numerical columns have different ranges, showing why feature scaling is useful before applying certain machine-learning algorithms.
+Some variables show greater variability than others, indicating differences in the distribution of patient measurements.
+The outliers should be interpreted carefully because they may represent genuine patient measurements, rather than errors.
+
+
+The box plot indicates variation in the numerical features and highlights potential outliers. The presence of outliers does not necessarily indicate incorrect data, as extreme medical measurements can represent genuine patient conditions. Therefore, outliers should be handled according to the specific requirement for each feature rather than automatically removed.
+
+----------------------------------------------------------------------------------------------------------------------
+Retain Outliers: Retain outliers in the AGE, HbA1c, and BMI columns, explaining why
+they should be preserved.
+
+
+Outliers in the AGE, HbA1c, and BMI columns were identified using the IQR method but were retained in the dataset. These values may represent genuine patient characteristics rather than data-entry errors.
+
+Extreme age, HbA1c, or BMI values can provide important information about variations in patients' health conditions and may be clinically meaningful.
+
+Therefore, removing them could lead to loss of important information and potentially bias the analysis.
+
+----------------------------------------------------------------------------------------------------------------------
+Feature Scaling: Standardize or normalize the numerical columns that have varying
+scales (e.g., Patients, AGE, BMI, Cr) to ensure consistent contribution in subsequent
+analyses. Justify the scaling method used (standardization vs. normalization).
+
+Feature scaling was performed using Standardization (Z-score scaling) on the selected numerical variables. The transformed variables have comparable scales, which ensures that differences in their original ranges do not disproportionately affect subsequent statistical analysis or machine-learning models.
+
+------------------------------------------------------------------------------------------------------------------------
+	
